@@ -5,6 +5,10 @@ class FoundationPile(val suit:String) {
         cards.clear()
     }
 
+    fun removeCard(card: Card) {
+        cards.remove(card)
+    }
+
     fun addCard(card: Card): Boolean {
         var nextValue = 0
         if (cards.size > 0) {
